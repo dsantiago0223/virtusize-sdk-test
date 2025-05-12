@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.afollestad.materialdialogs.MaterialDialog
-import com.virtusize.sdk.SizeRecommendation
+import com.virtusize.sdk. SizeRecommendation
 import com.virtusize.sdk.SizeRecommendation.SizeRecommendationCallback
 import com.virtusize.sdk.VirtusizeSDK
 import com.virtusize.app.databinding.ActivityMainBinding

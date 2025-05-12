@@ -72,7 +72,7 @@ afterEvaluate {
                 artifactId = mArtifactId
                 version = mVersionName
                 from(components["release"])
-                artifact(tasks["androidSourcesJar"])
+                //artifact(tasks["androidSourcesJar"]) //causes build error
                 pom {
                     name.set(mLibraryName)
                     description.set(mLibraryDescription)
