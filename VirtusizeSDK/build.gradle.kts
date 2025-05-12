@@ -4,7 +4,6 @@ import java.util.*
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    kotlin("android.extensions")
     id("maven-publish")
 }
 
