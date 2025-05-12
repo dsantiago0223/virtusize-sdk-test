@@ -1,7 +1,15 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
 }
+
+val mGroupId = "com.virtusize.sdk"
+val mArtifactId = "virtusize-sdk"
+val mVersionCode = 1
+val mVersionName = "1.0.0"
+val mLibraryName = "VirtusizeSDK"
+val mLibraryDescription = "Virtusize SDK test library"
 
 android {
     namespace = "com.virtusize.sdk"
@@ -39,4 +47,42 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+tasks.register<Jar>("androidSourcesJar") {
+    archiveClassifier.set("sources")
+    from(android.sourceSets["main"].java.srcDirs)
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = mGroupId
+                artifactId = mArtifactId
+                version = mVersionName
+                from(components["release"])
+                artifact(tasks["androidSourcesJar"])
+                pom {
+                    name.set(mLibraryName)
+                    description.set(mLibraryDescription)
+                }
+            }
+        }
+
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/PatilShreyas/AndroidGPR")
+                credentials {
+                    username = System.getenv("GPR_USER")
+                    password = System.getenv("GPR_KEY")
+                }
+            }
+        }
+    }
+}
+
+tasks.named("publish").configure {
+    dependsOn(tasks.named("assemble"))
 }
