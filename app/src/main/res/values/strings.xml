@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Virtusize</string>
+    <string name="title_find_your_perfect_fit">Find Your Perfect Fit</string>
+    <string name="title_height">Height:</string>
+    <string name="label_cm">cm</string>
+    <string name="title_weight">Weight:</string>
+    <string name="text_kg">kg</string>
+    <string name="text_get_size_recommendation">Get Size Recommendation</string>
+    <string name="your_recommended_size_placeholder_text">Your Recommended Size: M</string>
+    <string name="based_on_your_info_placeholder_text">Based on your info, size M is recommended.</string>
+    <string name="text_ok">OK</string>
+</resources>
