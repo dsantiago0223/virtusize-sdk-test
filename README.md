@@ -13,7 +13,7 @@ XL = >=30
 ## How to use
 
 ```
-import com.virtusize.sdk. SizeRecommendation
+import com.virtusize.sdk.SizeRecommendation
 import com.virtusize.sdk.SizeRecommendation.SizeRecommendationCallback
 import com.virtusize.sdk.VirtusizeSDK
 import com.virtusize.sdk.SizeRecommendationData
