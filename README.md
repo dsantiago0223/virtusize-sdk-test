@@ -52,9 +52,16 @@ Output:
 You can download the AAR File then add to your app>libs folder or download the module VirtusizeSDK and import directly in your project. If you use AAR file, just add this to app build.gradle file:
 
 ```gradle
+//Groovy DSL
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.aar"])
 }
+
+//Kotlin DSL
+dependencies {
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"))))
+}
+
 ```
 or grab from Maven
 
