@@ -1,3 +1,6 @@
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -38,6 +41,21 @@ android {
     }
 }
 
+val localProperties = Properties().apply {
+    load(FileInputStream(rootProject.file("local.properties")))
+}
+
+repositories {
+    maven {
+        name = "GitHubPackages"
+        url = uri("https://maven.pkg.github.com/dsantiago0223/virtusize-sdk-test")
+        credentials {
+            username = "dsantiago0223"
+            password = localProperties.getProperty("GPR_TOKEN")
+        }
+    }
+}
+
 dependencies {
     implementation(project(":VirtusizeSDK"))
     implementation(libs.androidx.core.ktx)
@@ -46,6 +64,8 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation (libs.afollestad.material.dialogs)
+    //Virtusize SDK
+    //implementation (libs.virtusize.sdk)
     testImplementation(libs.junit)
     testImplementation (libs.mockito.core)
     androidTestImplementation(libs.androidx.junit)

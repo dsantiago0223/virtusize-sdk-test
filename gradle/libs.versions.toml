@@ -11,6 +11,7 @@ material = "1.12.0"
 activity = "1.10.1"
 constraintlayout = "2.2.1"
 mockitoCore = "1.10.19"
+virtusizeSdk = "1.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -23,6 +24,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 afollestad-material-dialogs = { module = "com.afollestad.material-dialogs:core", version.ref = "afollestaMaterialDialogs" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
+virtusize-sdk = { module = "com.virtusize:virtusize-sdk", version.ref = "virtusizeSdk" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

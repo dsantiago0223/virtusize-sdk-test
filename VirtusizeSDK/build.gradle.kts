@@ -4,7 +4,7 @@ plugins {
     id("maven-publish")
 }
 
-val mGroupId = "com.virtusize.sdk"
+val mGroupId = "com.virtusize"
 val mArtifactId = "virtusize-sdk"
 val mVersionCode = 1
 val mVersionName = "1.0.0"
