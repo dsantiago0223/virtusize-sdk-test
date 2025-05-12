@@ -24,7 +24,7 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 afollestad-material-dialogs = { module = "com.afollestad.material-dialogs:core", version.ref = "afollestaMaterialDialogs" }
 mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
-virtusize-sdk = { module = "com.virtusize:virtusize-sdk", version.ref = "virtusizeSdk" }
+virtusize-sdk = { module = "com.virtusize.sdk:virtusize-sdk", version.ref = "virtusizeSdk" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
