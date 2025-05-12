@@ -73,7 +73,7 @@ afterEvaluate {
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/PatilShreyas/AndroidGPR")
+                url = uri("https://maven.pkg.github.com/dsantiago0223/virtusize-sdk-test")
                 credentials {
                     username = System.getenv("GPR_USER")
                     password = System.getenv("GPR_KEY")
