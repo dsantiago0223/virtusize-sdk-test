@@ -1,4 +1,4 @@
-# Virtusize SDK Test
+# Virtusize SDK Android Test
 
 - Test SDK that gives size recommendation by providing height (cm) and weight (kg).
 - The size recommendation will be calculated based on BMI (kg / m2), with the following BMI ranges corresponding to the size:
