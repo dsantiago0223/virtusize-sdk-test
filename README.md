@@ -35,14 +35,16 @@ private fun getSizeRecommendation(height: Double, weight: Double) {
             }
         })
 }
+```
 
+```
 Output:
-025-05-13 05:35:08.435 22775-22775 Virtusize               com.virtusize.app                    D  height: 180.0
-2025-05-13 05:35:08.435 22775-22775 Virtusize               com.virtusize.app                    D  weight: 90.0
-2025-05-13 05:35:08.438 22775-22775 Virtusize               com.virtusize.app                    D  bmi: 27.8
-2025-05-13 05:35:08.438 22775-22775 Virtusize               com.virtusize.app                    D  recommended size: L
-2025-05-13 05:35:08.438 22775-22775 Virtusize               com.virtusize.app                    D  last bmi result: 27.8
-2025-05-13 05:35:08.438 22775-22775 Virtusize               com.virtusize.app                    D  last recommended size result: L
+025-05-13 05:35:08.435 22775-22775 Virtusize        com.virtusize.app         D  height: 180.0
+2025-05-13 05:35:08.435 22775-22775 Virtusize       com.virtusize.app         D  weight: 90.0
+2025-05-13 05:35:08.438 22775-22775 Virtusize       com.virtusize.app         D  bmi: 27.8
+2025-05-13 05:35:08.438 22775-22775 Virtusize       com.virtusize.app         D  recommended size: L
+2025-05-13 05:35:08.438 22775-22775 Virtusize       com.virtusize.app         D  last bmi result: 27.8
+2025-05-13 05:35:08.438 22775-22775 Virtusize       com.virtusize.app         D  last recommended size result: L
 ```
 
 ## How to add the library in your project
