@@ -15,7 +15,7 @@ android {
         minSdk = 21
         targetSdk = 35
         versionCode = 1
-        versionName = "1.0.0"
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -38,21 +38,6 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
-    }
-}
-
-val localProperties = Properties().apply {
-    load(FileInputStream(rootProject.file("local.properties")))
-}
-
-repositories {
-    maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/dsantiago0223/virtusize-sdk-test")
-        credentials {
-            username = "dsantiago0223"
-            password = localProperties.getProperty("GPR_TOKEN")
-        }
     }
 }
 
