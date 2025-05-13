@@ -8,10 +8,10 @@ plugins {
 }
 
 //library details
-val mGroupId = "com.virtusize.sdk"
-val mArtifactId = "virtusize-sdk"
+val mGroupId = "com.virtusize"
+val mArtifactId = "sdk"
 val mVersionCode = 1
-val mVersionName = "1.0.3"
+val mVersionName = "1.0.4"
 val mLibraryName = "VirtusizeSDK"
 val mLibraryDescription = "Virtusize SDK test library"
 
