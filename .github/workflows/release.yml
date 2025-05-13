@@ -56,6 +56,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: VirtusizeSDK/build/outputs/aar/virtusize-sdk-release.aar
+          asset_path: VirtusizeSDK/build/outputs/aar/VirtusizeSDK-release.aar
           asset_name: virtusize-sdk.aar
           asset_content_type: application/aar
