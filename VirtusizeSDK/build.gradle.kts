@@ -11,7 +11,7 @@ plugins {
 val mGroupId = "com.virtusize"
 val mArtifactId = "sdk"
 val mVersionCode = 1
-val mVersionName = "1.0.4"
+val mVersionName = "1.0.5"
 val mLibraryName = "VirtusizeSDK"
 val mLibraryDescription = "Virtusize SDK test library"
 
@@ -42,6 +42,12 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    publishing {
+        singleVariant("release") {
+            withJavadocJar()
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
@@ -54,10 +60,10 @@ dependencies {
 }
 
 //task for creation of android sources
-tasks.register<Jar>("androidSourcesJar") {
+/*tasks.register<Jar>("androidSourcesJar") {
     archiveClassifier.set("sources")
     from(android.sourceSets["main"].java.srcDirs)
-}
+}*/
 
 //local credentials
 val githubProperties = Properties()
