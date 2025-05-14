@@ -66,8 +66,8 @@ dependencies {
 }*/
 
 //local credentials
-val githubProperties = Properties()
-githubProperties.load(FileInputStream(rootProject.file("github.properties")))
+//val githubProperties = Properties()
+//githubProperties.load(FileInputStream(rootProject.file("github.properties")))
 
 //configuration for publishing artifact
 afterEvaluate {
@@ -92,8 +92,10 @@ afterEvaluate {
                 name = "GitHubPackages"
                 url = uri("https://maven.pkg.github.com/dsantiago0223/virtusize-sdk-test")
                 credentials {
-                    username = githubProperties.get("gpr.usr") as String? ?: System.getenv("GPR_USER")
-                    password = githubProperties.get("gpr.key") as String? ?: System.getenv("GPR_KEY")
+                    username = System.getenv("GPR_USER")
+                    password = System.getenv("GPR_KEY")
+                    //username = githubProperties.get("gpr.usr") as String? ?: System.getenv("GPR_USER")
+                    //password = githubProperties.get("gpr.key") as String? ?: System.getenv("GPR_KEY")
                 }
             }
         }
