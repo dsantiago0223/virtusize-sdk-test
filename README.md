@@ -67,7 +67,7 @@ or grab from Maven
 
 ```gradle
 dependencies {
-    implementation("com.virtusize:sdk:1.0.4")
+    implementation("com.virtusize:sdk:1.0.7")
 }
 ```
 
