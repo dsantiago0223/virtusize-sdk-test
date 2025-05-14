@@ -11,7 +11,7 @@ plugins {
 val mGroupId = "com.virtusize"
 val mArtifactId = "sdk"
 val mVersionCode = 1
-val mVersionName = "1.0.9"
+val mVersionName = "1.1.0"
 val mLibraryName = "VirtusizeSDK"
 val mLibraryDescription = "Virtusize SDK test library"
 
