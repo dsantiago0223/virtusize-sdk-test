@@ -63,7 +63,7 @@ dependencies {
 }
 
 ```
-or grab from Maven
+or grab from Maven (will not work for now until published to Maven Central)
 
 ```gradle
 dependencies {
